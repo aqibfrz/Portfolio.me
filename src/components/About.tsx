@@ -2,7 +2,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
 import AnimatedText from './AnimatedText';
-import ShapeCanvas from './3DShape';
 
 const AboutSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -35,14 +34,9 @@ const AboutSection = () => {
     <section
       id="about"
       ref={sectionRef}
-      className="py-20 md:py-28 px-6 md:px-8 lg:px-12 bg-secondary/50 relative overflow-hidden"
+      className="py-20 md:py-28 px-6 md:px-8 lg:px-12 bg-secondary/50"
     >
-      {/* Background 3D shape */}
-      <div className="absolute -right-20 -top-20 w-80 h-80 opacity-30 pointer-events-none">
-        <ShapeCanvas className="w-full h-full" />
-      </div>
-      
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto">
         <div className="mb-16 overflow-hidden">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
             <AnimatedText text="About Me" />
@@ -96,56 +90,7 @@ const AboutSection = () => {
                   </div>
                 </div>
               </div>
-
-              <div>
-                <h3 className="text-lg font-medium mb-3">Internships</h3>
-                <div className="space-y-3">
-                  <div className="border-l-2 border-border pl-4 py-1">
-                    <p className="font-medium">Web Development Intern</p>
-                    <p className="text-sm text-muted-foreground">Startup Innovations</p>
-                    <p className="text-xs text-muted-foreground">Summer 2017</p>
-                  </div>
-                  <div className="border-l-2 border-border pl-4 py-1">
-                    <p className="font-medium">UX Design Intern</p>
-                    <p className="text-sm text-muted-foreground">Creative Solutions</p>
-                    <p className="text-xs text-muted-foreground">Summer 2016</p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-lg font-medium mb-3">Certifications</h3>
-                <div className="space-y-3">
-                  <div className="border-l-2 border-border pl-4 py-1">
-                    <p className="font-medium">AWS Certified Developer</p>
-                    <p className="text-sm text-muted-foreground">Amazon Web Services</p>
-                    <p className="text-xs text-muted-foreground">2022</p>
-                  </div>
-                  <div className="border-l-2 border-border pl-4 py-1">
-                    <p className="font-medium">Professional Frontend Developer</p>
-                    <p className="text-sm text-muted-foreground">Frontend Masters</p>
-                    <p className="text-xs text-muted-foreground">2020</p>
-                  </div>
-                  <div className="border-l-2 border-border pl-4 py-1">
-                    <p className="font-medium">UI/UX Design Specialist</p>
-                    <p className="text-sm text-muted-foreground">Design Academy</p>
-                    <p className="text-xs text-muted-foreground">2019</p>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-        
-        {/* Interactive 3D model */}
-        <div 
-          className={cn(
-            "mt-16 flex justify-center transition-all duration-700 delay-700",
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          )}
-        >
-          <div className="w-full max-w-lg h-64 md:h-80 rounded-lg overflow-hidden border border-border">
-            <ShapeCanvas className="w-full h-full" />
           </div>
         </div>
       </div>
