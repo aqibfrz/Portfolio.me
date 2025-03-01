@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
 import AnimatedText from './AnimatedText';
+import ShapeCanvas from './3DShape';
 
 const AboutSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -34,9 +35,14 @@ const AboutSection = () => {
     <section
       id="about"
       ref={sectionRef}
-      className="py-20 md:py-28 px-6 md:px-8 lg:px-12 bg-secondary/50"
+      className="py-20 md:py-28 px-6 md:px-8 lg:px-12 bg-secondary/50 relative overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto">
+      {/* Background 3D shape */}
+      <div className="absolute -right-20 -top-20 w-80 h-80 opacity-30 pointer-events-none">
+        <ShapeCanvas className="w-full h-full" />
+      </div>
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="mb-16 overflow-hidden">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
             <AnimatedText text="About Me" />
@@ -128,6 +134,18 @@ const AboutSection = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        
+        {/* Interactive 3D model */}
+        <div 
+          className={cn(
+            "mt-16 flex justify-center transition-all duration-700 delay-700",
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          )}
+        >
+          <div className="w-full max-w-lg h-64 md:h-80 rounded-lg overflow-hidden border border-border">
+            <ShapeCanvas className="w-full h-full" />
           </div>
         </div>
       </div>
