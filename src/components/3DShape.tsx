@@ -1,5 +1,5 @@
 
-import { useRef, useEffect } from 'react';
+import { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import * as THREE from 'three';
@@ -21,7 +21,6 @@ const Shape = () => {
       <dodecahedronGeometry args={[1, 0]} />
       <meshStandardMaterial 
         color="#7f5af0" 
-        wireframe 
         emissive="#300080"
         emissiveIntensity={0.5}
       />
@@ -37,7 +36,14 @@ interface ShapeCanvasProps {
 const ShapeCanvas = ({ className }: ShapeCanvasProps) => {
   return (
     <div className={className}>
-      <Canvas camera={{ position: [0, 0, 3] }}>
+      <Canvas 
+        camera={{ position: [0, 0, 3] }}
+        gl={{ 
+          antialias: true,
+          preserveDrawingBuffer: true,
+          powerPreference: "high-performance"
+        }}
+      >
         <ambientLight intensity={0.5} />
         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
         <pointLight position={[-10, -10, -10]} />
