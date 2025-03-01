@@ -48,8 +48,9 @@ const AboutSection = () => {
             "md:col-span-2 transition-all duration-700 delay-300",
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           )}>
-            <p className="text-muted-foreground mb-6 text-balance">
-              I'm a passionate frontend developer with a keen eye for design and a dedication to creating seamless user experiences. With 5+ years of experience in web development, I've worked on a variety of projects from e-commerce platforms to complex web applications.
+              <p className="text-muted-foreground mb-6 text-balance">
+              I'm passionate Machine Learning and Full-Stack Developer with a strong focus on Python. I love building intelligent, interactive applications that blend AI, facial recognition, and web technologies to create innovative solutions.
+              I've worked on a variety of projects from e-commerce platforms to complex web applications.
             </p>
             <p className="text-muted-foreground mb-6 text-balance">
               My approach combines technical expertise with creative problem-solving. I believe that great digital products should not only function flawlessly but also connect with users on an aesthetic and emotional level.
@@ -57,6 +58,12 @@ const AboutSection = () => {
             <p className="text-muted-foreground text-balance">
               When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, or hiking in the mountains. I'm always open to new opportunities and collaborations.
             </p>
+              {/* Resume Button */}
+              <a href=".\public\Aqib Resume.pdf" download>
+              <button className="mt-6 px-6 py-2 bg-primary text-white rounded-lg shadow-md hover:bg-primary/80 transition">
+                Download Resume
+              </button>
+            </a>
           </div>
 
           <div className={cn(
@@ -68,25 +75,25 @@ const AboutSection = () => {
                 <h3 className="text-lg font-medium mb-3">Education</h3>
                 <div className="space-y-3">
                   <div className="border-l-2 border-border pl-4 py-1">
-                    <p className="font-medium">Computer Science, BS</p>
-                    <p className="text-sm text-muted-foreground">University of Technology</p>
-                    <p className="text-xs text-muted-foreground">2014 - 2018</p>
+                    <p className="font-medium">Computer Science and Engineering, B-Tech</p>
+                    <p className="text-sm text-muted-foreground">Allen House of Technology</p>
+                    <p className="text-xs text-muted-foreground">2021 - 2025</p>
                   </div>
                 </div>
               </div>
 
               <div>
-                <h3 className="text-lg font-medium mb-3">Experience</h3>
+                <h3 className="text-lg font-medium mb-3">Internship</h3>
                 <div className="space-y-3">
                   <div className="border-l-2 border-border pl-4 py-1">
-                    <p className="font-medium">Senior Frontend Developer</p>
-                    <p className="text-sm text-muted-foreground">TechCorp Inc.</p>
-                    <p className="text-xs text-muted-foreground">2021 - Present</p>
+                    <p className="font-medium">Machine Learning Intern</p>
+                    <p className="text-sm text-muted-foreground">Trimbak Infotech</p>
+                    <p className="text-xs text-muted-foreground">2023</p>
                   </div>
                   <div className="border-l-2 border-border pl-4 py-1">
-                    <p className="font-medium">Frontend Developer</p>
-                    <p className="text-sm text-muted-foreground">Digital Agency</p>
-                    <p className="text-xs text-muted-foreground">2018 - 2021</p>
+                    <p className="font-medium">Artificial Intelligence+Machine Leraning -Remote</p>
+                    <p className="text-sm text-muted-foreground">Prutor IITK</p>
+                    <p className="text-xs text-muted-foreground">2021</p>
                   </div>
                 </div>
               </div>

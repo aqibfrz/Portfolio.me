@@ -3,6 +3,8 @@ import { useRef, useState, useEffect } from 'react';
 import ProjectCard from './ProjectCard';
 import AnimatedText from './AnimatedText';
 
+import { url } from 'inspector';
+
 const Projects = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -32,24 +34,31 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "E-commerce Platform",
-      description: "A full-featured online store with product management, cart functionality, and secure checkout process.",
-      tags: ["React", "Node.js", "MongoDB"],
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-      link: "#",
+      title: "Ping Pong Game",
+      description: "A professional GAME showcasing creative work with smooth animations and responsive design.",
+      tags: ["Python", "Pygame", "OOPS"],
+      image: "https://play-lh.googleusercontent.com/KBJ7QFFVcddkHqNQN-gpvpzP6JP4V1dDcAyFEr4g4K6X9fkbIoNZNNGLJ7Pl5jRm5TA",
+      link: "https://github.com/aqibfrz/Ping-Pong-Game",
     },
     {
-      title: "Portfolio Website",
-      description: "A professional portfolio website showcasing creative work with smooth animations and responsive design.",
-      tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
-      link: "#",
+      title: "Email Spam Classifier",
+      description: "An email spam classifier is a machine learning-based system designed to automatically filter and categorize emails as either: HAM or SPAM",
+      tags:  ["ML", "Numpy", "Skitlearn","Seaborn","Matplotlib","Jupiter Notebook"],
+      image: 'https://media.istockphoto.com/id/160975917/photo/concept-of-email-filter-in-work.jpg?s=612x612&w=0&k=20&c=3pfIX3lVsbjE1Kqbyh9xDeuXMMI_77odZ3QencFcMo8=',
+      link: "https://github.com/aqibfrz/Email-spam-classifier",
     },
     {
-      title: "Task Management App",
-      description: "A productivity application for managing tasks, projects, and team collaboration with real-time updates.",
-      tags: ["Vue.js", "Firebase", "Tailwind CSS"],
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+      title: "Wine Quality detection",
+      description: "Wine quality detection using machine learning involves predicting a wine's quality based on its chemical properties such as acidity, sugar content, pH level, alcohol percentage, and other measurable components. By training a model on a dataset of previously rated wines, machine learning algorithms can identify patterns that correlate with high or low-quality wines.",
+      tags: ["ML", "Numpy", "Skitlearn","Seaborn","Matplotlib","Jupiter Notebook"],
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNDMagh7TuYFUqszQpZGXwO7YVxTnGvgPW0g&s',
+      link: "https://github.com/aqibfrz/wine_quality_detection",
+    },
+    {
+      title:"Gemmify {E-commerce}",
+      description: "Gemify is an elegant and feature-rich e-commerce platform designed exclusively for jewelry shopping. It offers a seamless and secure shopping experience, allowing users to explore, purchase, and personalize exquisite jewelry pieces with ease.",
+      tags: ["HTML", "Tailwind CSS", "Node JS","Express JS","MongoDb"],
+      image: "https://canadianjeweller.com/wp-content/uploads/2023/10/gemify.jpg",
       link: "#",
     },
   ];

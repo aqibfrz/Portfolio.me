@@ -93,7 +93,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium">Phone</p>
-                  <p className="text-muted-foreground">+1 (123) 456-7890</p>
+                  <p className="text-muted-foreground">+91 (700) 704-1402</p>
                 </div>
               </div>
 
@@ -106,7 +106,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium">Email</p>
-                  <p className="text-muted-foreground">hello@johndoe.com</p>
+                  <p className="text-muted-foreground">Aqibs.d.33@johndoe.com</p>
                 </div>
               </div>
 
@@ -119,7 +119,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium">Location</p>
-                  <p className="text-muted-foreground">San Francisco, CA</p>
+                  <p className="text-muted-foreground">Kanpur, INDIA</p>
                 </div>
               </div>
             </div>
@@ -128,7 +128,7 @@ const Contact = () => {
               <h4 className="text-lg font-medium mb-4">Social Profiles</h4>
               <div className="flex space-x-4">
                 <a
-                  href="#"
+                  href="https://github.com/aqibfrz"
                   className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center transition-colors hover:bg-secondary/80"
                   aria-label="GitHub"
                 >
@@ -138,7 +138,7 @@ const Contact = () => {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/aqib-firoz"
                   className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center transition-colors hover:bg-secondary/80"
                   aria-label="LinkedIn"
                 >
@@ -149,7 +149,7 @@ const Contact = () => {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/aqib-firoz" 
                   className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center transition-colors hover:bg-secondary/80"
                   aria-label="Twitter"
                 >
@@ -179,7 +179,7 @@ const Contact = () => {
                   value={formState.name}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-md border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
-                  placeholder="John Doe"
+                  placeholder="Ex-hamza"
                   required
                   disabled={isSubmitting || submitted}
                 />
@@ -196,7 +196,7 @@ const Contact = () => {
                   value={formState.email}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-md border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
-                  placeholder="john@example.com"
+                  placeholder="Ex-hamz@example.com"
                   required
                   disabled={isSubmitting || submitted}
                 />

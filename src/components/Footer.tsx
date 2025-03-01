@@ -22,7 +22,7 @@ const Footer = () => {
             )}
           >
             <p className="text-sm text-muted-foreground">
-              © {year} John Doe. All rights reserved.
+              By Aqib Firoz.
             </p>
           </div>
           

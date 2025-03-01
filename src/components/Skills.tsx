@@ -36,8 +36,6 @@ const Skills = () => {
       items: [
         { name: 'HTML5 & CSS3', level: 90 },
         { name: 'JavaScript (ES6+)', level: 85 },
-        { name: 'React', level: 90 },
-        { name: 'TypeScript', level: 80 },
         { name: 'Tailwind CSS', level: 85 },
       ],
     },
@@ -48,17 +46,28 @@ const Skills = () => {
         { name: 'Express', level: 70 },
         { name: 'MongoDB', level: 65 },
         { name: 'REST APIs', level: 80 },
-        { name: 'Firebase', level: 70 },
+      ],
+    },
+    {
+      category: 'Machine Learning',
+      items: [
+        { name: 'Python', level: 75 },
+        { name: 'Tenser Flow', level: 75 },
+        { name: 'Skit Learn', level: 75 },
+        { name: 'Numpy', level: 70 },
+        { name: 'Matplotlib', level: 65 },
+        { name: 'NLTK', level: 80 },
+        
       ],
     },
     {
       category: 'Tools & Others',
       items: [
-        { name: 'Git & GitHub', level: 85 },
-        { name: 'Figma', level: 75 },
-        { name: 'Webpack', level: 70 },
-        { name: 'Jest', level: 65 },
-        { name: 'UI/UX Design', level: 80 },
+        {name: 'Git & GitHub', level: 85 },
+        {name: 'Webpack', level: 70 },
+        {name: 'UI/UX Design', level: 80 },
+        {name:'Jupyter Notebook',level: 70},
+        {name:'Power BI',level: 70}
       ],
     },
   ];

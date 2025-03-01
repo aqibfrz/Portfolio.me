@@ -32,7 +32,7 @@ const Hero = () => {
               
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
                 <AnimatedText 
-                  text="John Doe" 
+                  text="Aqib Firoz" 
                   className="inline-block"
                   delay={500}
                 />
@@ -88,7 +88,7 @@ const Hero = () => {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-background to-muted-foreground/10 rounded-full p-1">
                 <div className="w-full h-full bg-muted rounded-full flex items-center justify-center">
-                  <span className="text-4xl">JD</span>
+                  <span className="text-4xl">AF</span>
                 </div>
               </div>
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-foreground/5 rounded-full animate-pulse-slow"></div>
