@@ -144,7 +144,7 @@ const AboutSection = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           )}
         >
-          <div className="w-full max-w-lg h-64 md:h-80 rounded-lg overflow-hidden border border-border">
+          <div className="w-full max-w-lg h-64 md:h-80 rounded-lg overflow-hidden border border-border bg-black/5">
             <ShapeCanvas className="w-full h-full" />
           </div>
         </div>

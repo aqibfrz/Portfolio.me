@@ -20,8 +20,8 @@ const Shape = () => {
     <mesh ref={meshRef}>
       <dodecahedronGeometry args={[1, 0]} />
       <meshStandardMaterial 
-        color="#7f5af0" 
-        emissive="#300080"
+        color={new THREE.Color("#7f5af0")}
+        emissive={new THREE.Color("#300080")}
         emissiveIntensity={0.5}
       />
     </mesh>
@@ -43,6 +43,7 @@ const ShapeCanvas = ({ className }: ShapeCanvasProps) => {
           preserveDrawingBuffer: true,
           powerPreference: "high-performance"
         }}
+        dpr={[1, 2]}
       >
         <ambientLight intensity={0.5} />
         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
